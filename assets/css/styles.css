@@ -8,24 +8,37 @@
    font-family: 'Poppins' , sans-serif; 
 }
 
+.page-loader{
+    position: absolute;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .showcase {
     position: absolute;
     right: 0;
     width: 100%;
     min-height: 100vh;
-    padding: 100px;
+    padding: 50px 100px;
     background-color: black;
     color: rgb(240, 248, 255);
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.showcase header {
+.showcase .hero-content {
     font-size: 4em;
     position: relative;
     top: 0;
     left: 10;
     width: 100%;
-    padding: 40px 100px;
     z-index: 100;
 }
 
@@ -274,4 +287,8 @@ section img{
 
 .g-4{
     gap: 40px;
+}
+
+.w-100{
+    width: 100%;
 }
