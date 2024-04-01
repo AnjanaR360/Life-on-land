@@ -3,5 +3,5 @@
 })();
 
 function redirectToHome() {
-    window.location.replace("http://www.w3schools.com");
+    window.location.replace("home.html");
 }

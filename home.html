@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/loader.js"></script>
     <title>Earthly Habitats</title>
 </head>
-<body>
+<body onload="setTimeout(onLoader, 2000);" style="overflow: hidden;">
+    <div class="page-loader"><img src="assets/img/grey-9026.gif" width="100px"/></div>
     <div class="video-background">
         <video autoplay muted loop>
             <source src="assets/video/5921369-hd_1920_1080_30fps.mp4" type="video/mp4">
