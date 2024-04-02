@@ -292,3 +292,25 @@ section img{
 .w-100{
     width: 100%;
 }
+
+/* Gallery */
+figure {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+
+figure > img {
+    grid-row: 1 / -1;
+    grid-column: 1;
+    cursor: pointer;
+    max-width: 100%;
+    display: block;
+}
+
+.gallery {
+    column-count: 4;
+    column-gap: 10px;
+}
