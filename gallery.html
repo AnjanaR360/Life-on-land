@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery</title>
-  <script src="assets/js/navbar.js"></script>
-  <script src="assets/js/images.js"></script>
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.css"/>
-  <script src="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/images.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/gallery.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.js"></script>
+  </head>
+  <body>
+    <h1 class="page-title">Gallery</h1>
     <div class="figure-preview">
-      <span class="close-btn">
-        X
-      </span>
+      <span class="close-btn"> X </span>
       <div class="preview-container">
         <div class="left-container"></div>
         <div class="right-container">
@@ -23,19 +26,38 @@
       </div>
       <div class="toolbar">
         <div class="colors">
-          <h4>Background Color<br/><input type="text" name="background" class="background" data-coloris /></h4>
+          <h4>
+            Background Color<br /><input
+              type="text"
+              name="background"
+              class="background"
+              data-coloris
+            />
+          </h4>
         </div>
         <div class="fonts">
-          <span style="font-family: Arial, Helvetica, sans-serif" value="Arial, Helvetica, sans-serif" class="active">Aa</span>
-          <span style="font-family: 'Courier New', Courier, monospace" value="'Courier New', Courier, monospace">Aa</span>
-          <span style="font-family: 'Times New Roman', Times, serif" value="'Times New Roman', Times, serif">Aa</span>
+          <span
+            style="font-family: Arial, Helvetica, sans-serif"
+            value="Arial, Helvetica, sans-serif"
+            class="active"
+            >Aa</span
+          >
+          <span
+            style="font-family: 'Courier New', Courier, monospace"
+            value="'Courier New', Courier, monospace"
+            >Aa</span
+          >
+          <span
+            style="font-family: 'Times New Roman', Times, serif"
+            value="'Times New Roman', Times, serif"
+            >Aa</span
+          >
         </div>
       </div>
     </div>
     <div class="filter">
       <span value="all" class="active">ALL</span>
     </div>
-    <div class="gallery"></div>
-    
-</body>
+    <div class="gallery m-1"></div>
+  </body>
 </html>

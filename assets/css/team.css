@@ -1,0 +1,96 @@
+/* Team */
+
+.home-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 100px auto;
+  gap: 200px;
+  justify-items: center;
+}
+
+.profile-card {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 50px;
+  border-radius: 70%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+  transition: all .4s;
+}
+
+.profile-card:hover {
+  border-radius: 10px;
+  height: 260px;
+}
+
+.profile-card .img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border-color: black;
+}
+
+.profile-card:hover img {
+  border-radius: 10px;
+  border-color: #000000;
+  transform: translateY(-180px);
+}
+
+.img img {
+  object-fit: fill;
+  width: 100%;
+  border-radius: 50%;
+  transition: all .4s;
+  z-index: 99;
+}
+
+.caption {
+  text-align: center;
+  transform: translateY(-80px);
+  opacity: 0;
+  pointer-events: none;
+  transition: all .5s;
+}
+
+.profile-card:hover .caption {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.caption h3 {
+  font-size: 21px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.caption p {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 2px 0 12px 0;
+}
+
+.caption .social-links i {
+  font-size: 21px;
+  margin: 0 3px;
+  cursor: pointer;
+  color: black;
+  transition: all .4s;
+}
+
+.caption .social-links i:hover {
+  color: rgb(158, 156, 151);
+}
+
+.caption a {
+  text-decoration: none;
+  color: white;
+  transition: all .4s;
+}
+
+.caption a:hover {
+  color: rgba(255, 255, 255, 0.2);
+}
