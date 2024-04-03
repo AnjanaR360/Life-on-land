@@ -729,3 +729,363 @@ select{
     stroke: #11de1e;
     stroke-width: 2px;
 }
+
+
+/* Team */
+
+.main-heading h1{
+    font-size: 1800%;
+	width: 90%;
+	height: 20%;
+	display: inherit;
+	justify-content: center;
+	align-items:center;
+	margin-bottom: 50px;
+	cursor: default;
+	margin-top: 50px;
+	font-family: 'Times New Roman', Times, serif;
+	color: #ffffff;
+}
+
+
+.home-container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    /* justify-content: center; */
+
+}
+
+.profile-card {
+    position: relative;
+    /* align-items: center; */
+    width: 350px;
+    height: 350px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 50px;
+    border-radius: 70%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    transition: all .4s;
+    margin-left: 150px;
+    margin-top: 150px;
+    /* margin-bottom: 100px; */
+}
+
+.profile-card:hover {
+    border-radius: 10px;
+    height: 260px;
+}
+
+.profile-card .img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border-color: black;
+}
+
+.profile-card:hover img {
+    border-radius: 10px;
+    border-color: #000000;
+    transform: translateY(-180px);
+}
+
+.img img {
+    object-fit: fill;
+    width: 100%;
+    border-radius: 50%;
+    transition: all .4s;
+    z-index: 99;
+}
+
+.caption {
+    text-align: center;
+    transform: translateY(-80px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all .5s;
+}
+
+.profile-card:hover .caption {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.caption h3 {
+    font-size: 21px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.caption p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 2px 0 12px 0;
+}
+
+.caption .social-links i {
+    font-size: 21px;
+    margin: 0 3px;
+    cursor: pointer;
+    color: black;
+    transition: all .4s;
+}
+
+.caption .social-links i:hover {
+    color: rgb(158, 156, 151);
+}
+
+.caption a{
+    text-decoration: none;
+    color: white;
+    transition: all .4s; 
+}
+
+.caption a:hover{
+    color: rgba(255, 255, 255, 0.2);
+}
+
+/* Profile */
+
+.grid-container {
+    display: grid;
+    width: 90%; 
+    max-width: 1200px; 
+    gap: 50px;
+}
+
+.grid-container h1{
+    font-size: 1600%;
+	width: 90%;
+	height: 20%;
+	display: inherit;
+	justify-content: center;
+	align-items:center;
+	margin-bottom: 50px;
+	cursor: default;
+	margin-top: 50px;
+	font-family: 'Times New Roman', Times, serif;
+	color: #ffffff;
+}
+
+.grid-container .left-container { 
+    background-color: #1c324e;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    margin-top: -20px;
+}
+
+
+#progress-indicator {
+    margin-bottom: 20px;
+}
+
+#progress-bar {
+    width: 100%;
+    height: 24px;
+    border-radius: 12px;
+    background-color: #e0e0e0;
+    overflow: hidden;
+}
+
+#progress-bar::-webkit-progress-bar {
+    background-color: transparent;
+}
+
+#progress-bar::-webkit-progress-value {
+    background: linear-gradient(to right, #187ea7, #0c9fda);
+    border-radius: 12px;
+    transition: width 0.4s ease;
+}
+
+#progress-bar::-moz-progress-bar {
+    background: linear-gradient(to right, #187ea7, #0c9fda);
+}
+
+#progress-text {
+    text-align: center;
+    font-size: 16px;
+    color: whitesmoke;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.form-and-output {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.container header {
+    font-weight: 800;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-outer form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-outer form .page {
+    display: none;
+}
+
+.form-outer form .page.active {
+    display: block;
+}
+
+.form-outer form .page .title {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: whitesmoke;
+    margin-bottom: 10px;
+}
+
+.form-outer form .page .field {
+    margin-bottom: 45px;
+}
+
+.form-outer form .page .field .label {
+    font-size: 19px;
+    font-weight: 550;
+    color: whitesmoke;
+    margin-bottom: 10px;
+}
+
+.form-outer form .page .field input,
+.form-outer form .page .field select {
+    width: calc(100% - 20px); 
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #fbfbfb;
+}
+
+.form-outer form .page .btns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.form-outer form .page .btns button {
+    width: 48%;
+    padding: 10px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+    background-color: #187ea7;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-outer form .page .btns button:hover {
+    background-color: #0c9fda;
+}
+
+
+.userDetailsBox {
+    background-color: #b7cfee;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.userDetailsBox h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+    background: black; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.userDetailsBox ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.userDetailsBox ul li {
+    background-color: #e0e0e0;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    transition: transform 0.2s ease-in-out;
+}
+
+.userDetailsBox ul li:hover {
+    transform: scale(1.05);
+}
+
+.userDetailsBox ul li span {
+    font-weight: bold;
+    background: #181414;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; 
+    
+}
+
+.form-outer form .page:first-child .btns {
+    justify-content: center;
+}
+
+.form-outer form .page:first-child .btns .next {
+    background-color: #187ea7;
+    padding: 15px 30px; 
+    font-size: 18px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+.form-outer form .page:first-child .btns .next:hover {
+    background-color: #0c9fda; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+
+.userDetailsBox li {
+    background-color: #f2f2f2; 
+    margin: 15px 0; 
+    padding: 10px; 
+    border-left: 5px solid #187ea7; 
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: #333;
+    position: relative;
+    bottom: -350px;
+    background-color: aliceblue;
+    padding: 10px 0;
+    z-index: 1;
+}
+
+footer a{
+    text-decoration: none;
+    color: #333;
+    transition: all .4s;
+}
+
+footer a:hover{
+    color: rgb(0, 0, 0);
+}
+
