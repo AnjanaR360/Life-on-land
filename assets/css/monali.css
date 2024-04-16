@@ -19,8 +19,8 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 300%;
-  margin-top: 0;
+  font-size: 150%;
+  margin-top: 2%;
   margin-bottom: 0;
 }
 
@@ -30,7 +30,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 900%;
+  font-size: 300%;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -40,15 +40,15 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 600%;
+  font-size: 300%;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 #first-content{
-  background-color: #fff;
+  background-color: #9dc4d6;
   width: 100vw;
-  margin-top: 10%;
+  margin-top: 2%;
 }
   
 #intro1 img {
@@ -91,21 +91,51 @@ body {
   margin-bottom: 25px;
 }
 
+#second-content {
+  background-color: #81bbd6;
+  width: 100vw;
+  margin-top: 0%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+#team h2{
+  font-size: 300%
+
+}
+
+#team p{
+  text-align: left;
+  margin-top: 30px;
+}
+
+#user-profile h2{
+  font-size: 300%
+
+}
+
+#user-profile p{
+  text-align: left;
+  margin-top: 30px;
+}
+
+#content h2{
+  font-size: 300%
+
+}
+
+#content p{
+  text-align: left;
+  margin-top: 30px;
+}
+
+
   
-  /* ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  li {
-    margin-bottom: 5px;
-  } */
-  
-  a {
+a {
     text-decoration: none;
     color: #000;
-  }
+}
   
-  a:hover {
+a:hover {
     color: #ccc;
-  }
+}
